@@ -110,22 +110,14 @@ Both notebooks read their settings from environment variables:
 
 ## Screenshots
 
-### 1. KPIs computed with Spark
-![Total sales and quantity](images/02_kpis_sales_quantity.jpg)
-![Average order value and customers](images/03_kpis_aov_customers.jpg)
-
-### 2. Sales analysis
-![Sales by category](images/04_sales_by_category.jpg)
-![Sales by year](images/05_sales_by_year.jpg)
-![Daily sales](images/06_daily_sales.jpg)
-
-### 3. Tables loaded into Hive
-![Hive tables](images/07_hive_tables.jpg)
-
-### 4. Querying the warehouse in Hue
+### . Querying the warehouse in Hue
 The Hive query returns the same total sales as Spark, which confirms the load is complete.
-![Hue total sales](images/08_hue_total_sales_query.jpg)
-![Hue daily sales](images/09_hue_daily_sales_query.jpg)
+![Hue total sales]
+<img width="1600" height="712" alt="08_hue_total_sales_query" src="https://github.com/user-attachments/assets/92b5d7c6-f10f-4823-b44a-9e67f86b35a4" />
+
+![Hue daily sales]
+<img width="1600" height="712" alt="09_hue_daily_sales_query" src="https://github.com/user-attachments/assets/8abd7a02-3938-49b7-9d68-0f9d9608b757" />
+
 
 ## Project Structure
 
@@ -137,11 +129,4 @@ The Hive query returns the same total sales as Spark, which confirms the load is
 └── README.md
 ```
 
-## Future Improvements
 
-- Revenue metrics that count only completed or shipped orders
-- A star schema with `dim_customer`, `dim_product` and `dim_date`
-- Hive tables partitioned by year and month in Parquet format
-- Payments joined in to reconcile paid amounts against order totals
-- Notebooks converted to `spark-submit` scripts and scheduled with Apache Airflow
-- A deployment on AWS (S3 + EMR + Glue) or Azure (ADLS + Databricks)
